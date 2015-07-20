@@ -1,0 +1,14 @@
+#JSGF V1.0 ISO8859-1;
+#JSGF V1.0 JIS en;
+ 
+ grammar sam;
+ 
+ public <miscellaneous> = (quit);
+ public <sam> = <address> <request> <requestTypes>;
+ public <vocabulary> = (<address> hello | hello <address>| thank you <address>)*;
+ public <extra> = (sam | please | why | who | you | hoo | shoo | how );
+ 
+ 
+ <address> = (sam);
+ <request> = (what is | what | get the | post to | send | post);
+ <requestTypes> = (the time | time is it | day is it | time | the weather | weather | tweet | face book | email);
